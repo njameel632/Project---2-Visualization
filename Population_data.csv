@@ -1,4 +1,4 @@
-,YEAR,STATE_id,STATE,POPULATION
+,year_population,STATE_id,state_population,population
 0,1990,AL,Alabama,4050055
 1,1991,AL,Alabama,4099156
 2,1992,AL,Alabama,4154014

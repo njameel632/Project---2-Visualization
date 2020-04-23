@@ -1,4 +1,4 @@
-,YEAR,STATE_id,TYPE OF PRODUCER,ENERGY SOURCE,GENERATION (Megawatthours),ENERGY TYPE
+,year_energy,STATE_id,Type_of_producer,energy_source,generation_megewatthours,energy_type
 1,1990,AK,Total Electric Power Industry,Coal,510573,Conventional
 2,1990,AK,Total Electric Power Industry,Hydroelectric Conventional,974521,Green Energy
 3,1990,AK,Total Electric Power Industry,Natural Gas,3466261,Conventional
