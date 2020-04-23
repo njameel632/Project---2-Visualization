@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Energy Resources in US</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
@@ -20,11 +20,10 @@
         <div class="row">
         <div class = "col-lg-8 col-md-12">
             <h1>Energy Resources by State</h1>
-            MAP
               
               <div style="display: table;">
               <div >
-				<img src="usmap.png" style="float:left; width:70%">
+				<img src="static/usmap.png" style="float:left; width:70%">
 				</div>
 			
 				
@@ -32,7 +31,7 @@
 					<p>RESOURCE KEY<p>
             <br>
           <p>Year:</p>
-            <input type="range" min="1990" max="2018" value="1" class="slider" id="myRange"> <br>
+            <input type="number" min="1990" max="2018" placeholder="YEAR" value = {{user_input}} class="slider" id="myRange"> <br>
 
             <input type="checkbox" id="Green Resources" name="Green Resources" value="Green Resources" checked>
             <label for="Green Resources"> Green Resources</label><br>
