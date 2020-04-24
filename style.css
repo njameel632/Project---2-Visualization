@@ -4,10 +4,22 @@ h1 {
     background-color:rgb(72, 209, 204);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-      
+ 
 body {font-size: 1em;
     background-color:rgb(72, 209, 204);
     margin: 20px;
     padding: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.key {
+    width: 300px;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: lightblue;
+}
+.col {
+    width: 300px;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: rgb(72, 209, 204);
 }

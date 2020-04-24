@@ -10,11 +10,8 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Energy Sources in US</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        </div>
+        Energy Sources in US
+      
       </nav>
       <div class="container">
         <div class="row">
@@ -27,47 +24,47 @@
 				</div>
 			
 				
-				<div >
-					<p>RESOURCE KEY<p>
-            <br>
-          <p>Year:</p>
-            <input type="number" min="1990" max="2018" placeholder="YEAR" value = {{user_input}} class="slider" id="myRange"> <br>
-
-            <input type="checkbox" id="Green Resources" name="Green Resources" value="Green Resources" checked>
+				<div class = "key">
+          <p>Select a Year:</p>
+          <form action ="/results", method= "POST">
+          <input type="number" min="1990" max="2018" placeholder="YEAR" class="slider" id="myRange"> <br>
+          
+            <input type="checkbox" id="Green Resources" name="Green Resources"  checked>
             <label for="Green Resources"> Green Resources</label><br>
 
-            <input type="checkbox" id="Wind" name="Wind" value="Wind">
+            <input type="checkbox" id="Wind" name="Wind">
             <label for="Wind"> Wind</label><br>
 
-            <input type="checkbox" id="Hydroelectric" name="Hydroelectric" value="Hydroelectric">
+            <input type="checkbox" id="Hydroelectric" name="Hydroelectric">
             <label for="Hydroelectric"> Hydroelectric</label><br>
 
-            <input type="checkbox" id="Solar" name="Solar" value="Solar">
+            <input type="checkbox" id="Solar" name="Solar">
             <label for="Solar"> Solar</label><br>
             <br>
 
-            <input type="checkbox" id="Conventional Resources" name="Conventional Resources" value="Conventional Resources" checked>
+            <input type="checkbox" id="Conventional Resources" name="Conventional Resources" checked>
             <label for="Conventional Resources"> Conventional Resources</label><br>
 
-            <input type="checkbox" id="Coal" name="Coal" value="Coal">
+            <input type="checkbox" id="Coal" name="Coal">
             <label for="Coal"> Coal</label><br>
 
-            <input type="checkbox" id="Natural Gas" name="Natural Gas" value="Natural Gas">
+            <input type="checkbox" id="Natural Gas" name="Natural Gas">
             <label for="Natural Gas"> Naural Gas</label><br>
 
-            <input type="checkbox" id="Petroleum" name="Petroleum" value="Petroleum">
+            <input type="checkbox" id="Petroleum" name="Petroleum">
             <label for="Petroleum"> Petroleum</label><br>
 
-            <input type="checkbox" id="Wood/Wood Derived" name="Wood/Wood Derived" value="Wood/Wood Derived">
+            <input type="checkbox" id="Wood/Wood Derived" name="Wood/Wood Derived">
             <label for="Wood/Wood Derived"> Wood/Wood Derived</label><br>
 
-            <input type="checkbox" id="Other Biomass" name="Other Biomass" value="Other Biomass">
+            <input type="checkbox" id="Other Biomass" name="Other Biomass">
             <label for="Other Biomass"> Other Biomass</label><br>
             
-            <input type="checkbox" id="Other Gases" name="Other Gases" value="Other Gases">
+            <input type="checkbox" id="Other Gases" name="Other Gases">
             <label for="Other Gases"> Other Gases</label><br>
             <br>
-
+            <input type="submit" value = "submit"/>
+            </form>
 				</div>
               </div>
             </div>
