@@ -11,93 +11,36 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <h1>Energy Sources in US </h1>
-
+    <br>
   </nav>
-
 <div class="container">
   <div class="container">
     <div class="row">
       <div class="col">
-  <img src="static/field.jpg" width=100% padding-top: 8rem; padding-bottom: 8rem;>
+        <div class="centered">Energy Resources</div>
+  <img src="static/field.jpg" opacity= 50% width=100% padding-top: 8rem; padding-bottom: 8rem;>
+</div>
 </div>
 </div>
 <div>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <h2></h2>
+  
+  <h2>Team: Luke, Noaman, Clarence, Jonathan, Erica</h2>
 </div>
 </nav>
 </div>
     <div class="container">
       <div class="row">
-        <div class="col-3">
+        <div class="center">
           
-          <div class="key">
-            <p class="key"> Select a Year:</p>
-            <form action="/results" , method="POST">
-              <input type="number" min="1990" max="2018" placeholder="YEAR" class="slider" id="myRange"> <br>
-        
-              <input type="checkbox" id="Green Resources" name="Green Resources" checked>
-              <label for="Green Resources"> Green Resources</label><br>
-        
-              <input type="checkbox" id="Wind" name="Wind">
-              <label for="Wind"> Wind</label><br>
-        
-              <input type="checkbox" id="Hydroelectric" name="Hydroelectric">
-              <label for="Hydroelectric"> Hydroelectric</label><br>
-        
-              <input type="checkbox" id="Solar" name="Solar">
-              <label for="Solar"> Solar</label><br>
-              <br>
-        
-              <input type="checkbox" id="Conventional Resources" name="Conventional Resources" checked>
-              <label for="Conventional Resources"> Conventional Resources</label><br>
-        
-              <input type="checkbox" id="Coal" name="Coal">
-              <label for="Coal"> Coal</label><br>
-        
-              <input type="checkbox" id="Natural Gas" name="Natural Gas">
-              <label for="Natural Gas"> Natural Gas</label><br>
-        
-              <input type="checkbox" id="Petroleum" name="Petroleum">
-              <label for="Petroleum"> Petroleum</label><br>
-        
-              <input type="checkbox" id="Wood/Wood Derived" name="Wood/Wood Derived">
-              <label for="Wood/Wood Derived"> Wood/Wood Derived</label><br>
-        
-              <input type="checkbox" id="Other Biomass" name="Other Biomass">
-              <label for="Other Biomass"> Other Biomass</label><br>
-        
-              <input type="checkbox" id="Other Gases" name="Other Gases">
-              <label for="Other Gases"> Other Gases</label><br>
-              <br>
-              <input type="submit" value="submit" />
-            </form>
-          </div>
-        </div>
-        <div class="col-8">
-          <h1> Energy Resources by State</h1>
-    <!-- <div style="display: table;"> -->
-    <img src=MAP style="float:right; width:70%">
-  </div>
-        </div>
-      </div>
-      <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <h2></h2>
-        </div>
-        </nav>
-        </div>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            BAR GRAPH<br>
-            GRAPH
-          </div>
-          <div class="col">
-            LINE GRAPH <br>
-            GRAPH
-          </div>
+            <h5>This project displays data related to energy sources used in the US and compares Green Energy vs Conventional Energy by year over the last 3 decades.</h5>
+            <br>
+            <br>
+            <br>
+            <a class="center" href="{{ url_for('templates', filename='map.html') }}">Interactive Analysis</a>
+            
+            </div>
+            </div>
     </div>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
