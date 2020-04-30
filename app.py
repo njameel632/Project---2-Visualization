@@ -69,6 +69,15 @@ def results():
     #join query results to return JSONIFY
     results = pd.merge(results_energy, results_population, on = "state_id")
 
+    #change dataframe obj to list of dictionaries.
+    results_list = []
+    for result in results:
+        row = {}
+        row["state_id"] = result[0]
+        row["megawatthours"] = result[1]
+        row['population'] = result[2]
+        results_list.append(row)
+
     # session.query(populationData.year_population, 
     # populationData.state_id, populationData.population).all()
 
@@ -89,7 +98,7 @@ def results():
     #     energy_data.append(i)
 
 
-    return jsonify(results_dict)
+    return jsonify(results_list)
 
 @app.route('/income')
 def income(): 
