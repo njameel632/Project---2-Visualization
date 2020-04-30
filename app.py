@@ -89,7 +89,7 @@ def results():
     #     energy_data.append(i)
 
 
-    return jsonify(per_cap_energy)
+    return jsonify(results_dict)
 
 @app.route('/income')
 def income(): 
