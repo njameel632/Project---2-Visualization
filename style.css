@@ -18,6 +18,12 @@
     font-weight: 400;
     font: Garamond;
   }
+  h7 {
+    text-align: right; 
+    font-weight: 400;
+    font: Garamond;
+  }
+
   .col{
     text-align: center;
   }
