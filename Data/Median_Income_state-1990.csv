@@ -1,6 +1,6 @@
 YEAR,STATE,STATE_id,Median_Income
-1990,Alaska,AK,42607
-1990,Arizona,AL,71686
+1990,Alaska,AL,42607
+1990,Alabama,AK,71686
 1990,Arizona,AZ,53309
 1990,Arkansas,AR,41565
 1990,California,CA,60726
@@ -50,8 +50,8 @@ YEAR,STATE,STATE_id,Median_Income
 1990,West Virginia,WV,40381
 1990,Wisconsin,WI,56022
 1990,Wyoming,WY,53740
-1991,Alaska,AK,42852
-1991,Arizona,AL,71482
+1991,Alaska,AL,42852
+1991,Arizona,AK,71482
 1991,Arizona,AZ,54101
 1991,Arkansas,AR,41248
 1991,California,CA,59253
@@ -101,8 +101,8 @@ YEAR,STATE,STATE_id,Median_Income
 1991,West Virginia,WV,40741
 1991,Wisconsin,WI,54798
 1991,Wyoming,WY,51131
-1992,Alaska,AK,44323
-1992,Alabama,AL,71791
+1992,Alaska,AL,44323
+1992,Alabama,AK,71791
 1992,Arizona,AZ,50420
 1992,Arkansas,AR,41015
 1992,California,CA,59943
@@ -152,8 +152,8 @@ YEAR,STATE,STATE_id,Median_Income
 1992,West Virginia,WV,34814
 1992,Wisconsin,WI,57204
 1992,Wyoming,WY,51881
-1993,Alaska,AK,42017
-1993,Alabama,AL,71917
+1993,Alaska,AL,42017
+1993,Alabama,AK,71917
 1993,Arizona,AZ,51110
 1993,Arkansas,AR,38594
 1993,California,CA,57078
@@ -203,8 +203,8 @@ YEAR,STATE,STATE_id,Median_Income
 1993,West Virginia,WV,37559
 1993,Wisconsin,WI,53214
 1993,Wyoming,WY,49320
-1994,Alaska,AK,44626
-1994,Alabama,AL,74443
+1994,Alaska,AL,44626
+1994,Alabama,AK,74443
 1994,Arizona,AZ,51349
 1994,Arkansas,AR,41950
 1994,California,CA,57975
@@ -254,8 +254,8 @@ YEAR,STATE,STATE_id,Median_Income
 1994,West Virginia,WV,38666
 1994,Wisconsin,WI,58068
 1994,Wyoming,WY,54380
-1995,Alaska,AK,41646
-1995,Alabama,AL,76837
+1995,Alaska,AL,41646
+1995,Alabama,AK,76837
 1995,Arizona,AZ,49452
 1995,Arkansas,AR,41362
 1995,California,CA,59300
@@ -305,8 +305,8 @@ YEAR,STATE,STATE_id,Median_Income
 1995,West Virginia,WV,39865
 1995,Wisconsin,WI,65623
 1995,Wyoming,WY,50519
-1996,Alaska,AK,47294
-1996,Alabama,AL,82374
+1996,Alaska,AL,47294
+1996,Alabama,AK,82374
 1996,Arizona,AZ,49377
 1996,Arkansas,AR,42332
 1996,California,CA,60576
@@ -356,8 +356,8 @@ YEAR,STATE,STATE_id,Median_Income
 1996,West Virginia,WV,39404
 1996,Wisconsin,WI,62431
 1996,Wyoming,WY,48310
-1997,Alaska,AK,48794
-1997,Alabama,AL,73321
+1997,Alaska,AL,48794
+1997,Alabama,AK,73321
 1997,Arizona,AZ,50018
 1997,Arkansas,AR,39968
 1997,California,CA,60641
@@ -407,8 +407,8 @@ YEAR,STATE,STATE_id,Median_Income
 1997,West Virginia,WV,41994
 1997,Wisconsin,WI,60490
 1997,Wyoming,WY,51061
-1998,Alaska,AK,54664
-1998,Alabama,AL,76408
+1998,Alaska,AL,54664
+1998,Alabama,AK,76408
 1998,Arizona,AZ,55906
 1998,Arkansas,AR,41700
 1998,California,CA,61700
@@ -459,8 +459,8 @@ YEAR,STATE,STATE_id,Median_Income
 1998,Wisconsin,WI,62292
 1998,Wyoming,WY,53133
 1999,Alaska,AK,53502
-1999,Alabama,AL,75854
-1999,Arizona,AZ,54600
+1999,Alabama,AK,75854
+1999,Arizona,AL,54600
 1999,Arkansas,AR,43807
 1999,California,CA,64391
 1999,Colorado,CO,71103
@@ -509,8 +509,8 @@ YEAR,STATE,STATE_id,Median_Income
 1999,West Virginia,WV,43239
 1999,Wisconsin,WI,67399
 1999,Wyoming,WY,54974
-2000,Alaska,AK,50566
-2000,Alabama,AL,75436
+2000,Alaska,AL,50566
+2000,Alabama,AK,75436
 2000,Arizona,AZ,56788
 2000,Arkansas,AR,42391
 2000,California,CA,66827
@@ -560,8 +560,8 @@ YEAR,STATE,STATE_id,Median_Income
 2000,West Virginia,WV,41982
 2000,Wisconsin,WI,64360
 2000,Wyoming,WY,56568
-2001,Alaska,AK,48800
-2001,Alabama,AL,79616
+2001,Alaska,AL,48800
+2001,Alabama,AK,79616
 2001,Arizona,AZ,59270
 2001,Arkansas,AR,46272
 2001,California,CA,65596
@@ -611,8 +611,8 @@ YEAR,STATE,STATE_id,Median_Income
 2001,West Virginia,WV,41184
 2001,Wisconsin,WI,62937
 2001,Wyoming,WY,55127
-2002,Alaska,AK,51380
-2002,Alabama,AL,72110
+2002,Alaska,AL,51380
+2002,Alabama,AK,72110
 2002,Arizona,AZ,54292
 2002,Arkansas,AR,44253
 2002,California,CA,64817
@@ -662,8 +662,8 @@ YEAR,STATE,STATE_id,Median_Income
 2002,West Virginia,WV,40116
 2002,Wisconsin,WI,62721
 2002,Wyoming,WY,54332
-2003,Alaska,AK,49774
-2003,Alabama,AL,69257
+2003,Alaska,AL,49774
+2003,Alabama,AK,69257
 2003,Arizona,AZ,55000
 2003,Arkansas,AR,42756
 2003,California,CA,65867
@@ -713,8 +713,8 @@ YEAR,STATE,STATE_id,Median_Income
 2003,West Virginia,WV,43773
 2003,Wisconsin,WI,61818
 2003,Wyoming,WY,56855
-2004,Alaska,AK,47651
-2004,Alabama,AL,71632
+2004,Alaska,AL,47651
+2004,Alabama,AK,71632
 2004,Arizona,AZ,57039
 2004,Arkansas,AR,45511
 2004,California,CA,64033
@@ -764,8 +764,8 @@ YEAR,STATE,STATE_id,Median_Income
 2004,West Virginia,WV,43415
 2004,Wisconsin,WI,59493
 2004,Wyoming,WY,59057
-2005,Alaska,AK,46745
-2005,Alabama,AL,70326
+2005,Alaska,AL,46745
+2005,Alabama,AK,70326
 2005,Arizona,AZ,56931
 2005,Arkansas,AR,46126
 2005,California,CA,65122
@@ -815,8 +815,8 @@ YEAR,STATE,STATE_id,Median_Income
 2005,West Virginia,WV,45858
 2005,Wisconsin,WI,56182
 2005,Wyoming,WY,56268
-2006,Alaska,AK,46255
-2006,Alabama,AL,68761
+2006,Alaska,AL,46255
+2006,Alabama,AK,68761
 2006,Arizona,AZ,56864
 2006,Arkansas,AR,45164
 2006,California,CA,67421
@@ -866,8 +866,8 @@ YEAR,STATE,STATE_id,Median_Income
 2006,West Virginia,WV,46824
 2006,Wisconsin,WI,63001
 2006,Wyoming,WY,57332
-2007,Alaska,AK,50028
-2007,Alabama,AL,74657
+2007,Alaska,AL,50028
+2007,Alabama,AK,74657
 2007,Arizona,AZ,55957
 2007,Arkansas,AR,48349
 2007,California,CA,66054
@@ -917,8 +917,8 @@ YEAR,STATE,STATE_id,Median_Income
 2007,West Virginia,WV,49885
 2007,Wisconsin,WI,60771
 2007,Wyoming,WY,57769
-2008,Alaska,AK,50761
-2008,Alabama,AL,73032
+2008,Alaska,AL,50761
+2008,Alabama,AK,73032
 2008,Arizona,AZ,53544
 2008,Arkansas,AR,45180
 2008,California,CA,65071
@@ -968,8 +968,8 @@ YEAR,STATE,STATE_id,Median_Income
 2008,West Virginia,WV,43363
 2008,Wisconsin,WI,58436
 2008,Wyoming,WY,60875
-2009,Alaska,AK,45789
-2009,Alabama,AL,70555
+2009,Alaska,AL,45789
+2009,Alabama,AK,70555
 2009,Arizona,AZ,52385
 2009,Arkansas,AR,41847
 2009,California,CA,64291
@@ -1019,8 +1019,8 @@ YEAR,STATE,STATE_id,Median_Income
 2009,West Virginia,WV,46373
 2009,Wisconsin,WI,58682
 2009,Wyoming,WY,60094
-2010,Alaska,AK,46120
-2010,Alabama,AL,65178
+2010,Alaska,AL,46120
+2010,Alabama,AK,65178
 2010,Arizona,AZ,52839
 2010,Arkansas,AR,43477
 2010,California,CA,61162
@@ -1070,8 +1070,8 @@ YEAR,STATE,STATE_id,Median_Income
 2010,West Virginia,WV,48198
 2010,Wisconsin,WI,56731
 2010,Wyoming,WY,58816
-2011,Alaska,AK,46520
-2011,Alabama,AL,62731
+2011,Alaska,AL,46520
+2011,Alabama,AK,62731
 2011,Arizona,AZ,53108
 2011,Arkansas,AR,45114
 2011,California,CA,58292
@@ -1121,8 +1121,8 @@ YEAR,STATE,STATE_id,Median_Income
 2011,West Virginia,WV,45680
 2011,Wisconsin,WI,56862
 2011,Wyoming,WY,59539
-2012,Alaska,AK,46490
-2012,Alabama,AL,68080
+2012,Alaska,AL,46490
+2012,Alabama,AK,68080
 2012,Arizona,AZ,50320
 2012,Arkansas,AR,41735
 2012,California,CA,60990
@@ -1172,110 +1172,61 @@ YEAR,STATE,STATE_id,Median_Income
 2012,West Virginia,WV,46586
 2012,Wisconsin,WI,56775
 2012,Wyoming,WY,61517
-2013,Alaska,AK,49876
-2013,Alaska,AK,43616
-2013,Alabama,AL,76387
-2013,Alabama,AL,64439
+2013,Alaska,AL,43616
+2013,Alabama,AK,76387
 2013,Arizona,AZ,55453
-2013,Arizona,AZ,53335
-2013,Arkansas,AR,41503
 2013,Arkansas,AR,42075
 2013,California,CA,64078
-2013,California,CA,60635
 2013,Colorado,CO,71580
-2013,Colorado,CO,66794
 2013,Connecticut,CT,73034
-2013,Connecticut,CT,71442
 2013,Delaware,DE,57013
-2013,Delaware,DE,55040
-2013,DC,D.C,63301
 2013,DC,D.C,63952
 2013,Florida,FL,51153
-2013,Florida,FL,50473
-2013,Georgia,GA,49530
 2013,Georgia,GA,50001
 2013,Hawaii,HI,67705
-2013,Hawaii,HI,64725
-2013,Idaho,ID,51085
 2013,Idaho,ID,54563
 2013,Illinois,IL,56850
 2013,Illinois,IL,60285
-2013,Indiana,IN,52126
 2013,Indiana,IN,53284
 2013,Iowa,IA,63405
-2013,Iowa,IA,57818
-2013,Kansas,KS,50403
 2013,Kansas,KS,54266
 2013,Lousiana,LA,48933
-2013,Lousiana,LA,41762
 2013,Kentucky,KY,47303
-2013,Kentucky,KY,44435
 2013,Maine,ME,57925
 2013,Maine,ME,52828
 2013,Maryland,MD,73099
-2013,Maryland,MD,68787
-2013,Massachusetts,MA,65906
 2013,Massachusetts,MA,66364
 2013,Michigan,MI,59622
-2013,Michigan,MI,51437
 2013,Minnesota,MN,67798
-2013,Minnesota,MN,64197
-2013,Mississippi,MS,34085
 2013,Mississippi,MS,43056
-2013,Missouri,MO,48804
 2013,Missouri,MO,53029
-2013,Montana,MT,45534
 2013,Montana,MT,46516
 2013,Nebraska,NE,60735
-2013,Nebraska,NE,56679
 2013,Nevada,NV,54646
-2013,Nevada,NV,47820
-2013,New Hampshire,NH,72831
 2013,New Hampshire,NH,75174
 2013,New Jersey,NJ,67198
-2013,New Jersey,NJ,65119
-2013,New Mexico,NM,42336
 2013,New Mexico,NM,44402
-2013,New York,NY,52665
 2013,New York,NY,56751
 2013,North Carolina,NC,48840
-2013,North Carolina,NC,43434
 2013,North Dakota,ND,62347
-2013,North Dakota,ND,55745
 2013,Ohio,OH,53489
-2013,Ohio,OH,48904
 2013,Oklahoma,OK,48655
-2013,Oklahoma,OK,46142
-2013,Oregon,OR,51646
 2013,Oregon,OR,59348
 2013,Pennsylvania,PA,58135
-2013,Pennsylvania,PA,56866
-2013,Rhode Island,RI,59365
 2013,Rhode Island,RI,60935
-2013,South Carolina,SC,45916
 2013,South Carolina,SC,46112
-2013,South Dakota,SD,56298
 2013,South Dakota,SD,57394
 2013,Tennesse,TN,45703
-2013,Tennesse,TN,44795
-2013,Texas,TX,54183
 2013,Texas,TX,55891
-2013,Utah,UT,64344
 2013,Utah,UT,66368
 2013,Vermont,VT,69052
-2013,Vermont,VT,57804
-2013,Virginia,VA,69467
 2013,Virginia,VA,71272
 2013,Washington,WA,67375
-2013,Washington,WA,63353
 2013,West Virginia,WV,45395
-2013,West Virginia,WV,42415
-2013,Wisconsin,WI,54520
 2013,Wisconsin,WI,58243
 2013,Wyoming,WY,71084
-2013,Wyoming,WY,58709
-2014,Alaska,AK,43820
-2014,Alabama,AL,70095
+2014,Alaska,AL,43820
+2014,Alabama,AK,70095
 2014,Arizona,AZ,51050
 2014,Arkansas,AR,46560
 2014,California,CA,62693
@@ -1325,8 +1276,8 @@ YEAR,STATE,STATE_id,Median_Income
 2014,West Virginia,WV,40994
 2014,Wisconsin,WI,60198
 2014,Wyoming,WY,57721
-2015,Alaska,AK,46053
-2015,Alabama,AL,77717
+2015,Alaska,AL,46053
+2015,Alabama,AK,77717
 2015,Arizona,AZ,54060
 2015,Arkansas,AR,44282
 2015,California,CA,65843
@@ -1376,8 +1327,8 @@ YEAR,STATE,STATE_id,Median_Income
 2015,West Virginia,WV,44309
 2015,Wisconsin,WI,57347
 2015,Wyoming,WY,63038
-2016,Alaska,AK,48237
-2016,Alabama,AL,77351
+2016,Alaska,AL,48237
+2016,Alabama,AK,77351
 2016,Arizona,AZ,58328
 2016,Arkansas,AR,46894
 2016,California,CA,68070
@@ -1427,8 +1378,8 @@ YEAR,STATE,STATE_id,Median_Income
 2016,West Virginia,WV,45308
 2016,Wisconsin,WI,61103
 2016,Wyoming,WY,59073
-2017,Alaska,AK,51113
-2017,Alabama,AL,72231
+2017,Alaska,AL,51113
+2017,Alabama,AK,72231
 2017,Arizona,AZ,61125
 2017,Arkansas,AR,48829
 2017,California,CA,69759
