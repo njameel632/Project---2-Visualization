@@ -11,20 +11,34 @@ from sqlalchemy import func
 
 app = Flask(__name__)
 
+<<<<<<< HEAD
 #Clarence
 rds_connection_string = "postgres://postgres:Group1Washington@localhost:5432/postgres"
 engine = create_engine(rds_connection_string)
+=======
+#Noaman
+# rds_connection_string = "postgres://NoamanJameel:Noamanj1919@localhost:5432/postgres"
+# engine = create_engine(rds_connection_string)
+>>>>>>> 6ec76b02ad7c245a810ea7dc0e09e5127192d300
 
 #Noaman
 # rds_connection_string = "postgres://NoamanJameel:Noamanj1919@localhost:5432/postgres"
 # engine = create_engine(rds_connection_string)
 
 #Luke
-# path_string = "postgres:postgresl@localhost:5432/energy"
+path_string = "postgres:postgres@localhost:5432/energy"
+engine = create_engine(f'postgresql+psycopg2://{path_string}')
+
+#Erica
+# path_string = "ericamatrese:Harrisburg1@localhost:5432/energy"
+# engine = create_engine(f"postgresql://{path_string}")
+
+#Clarence
+# path_string = "postgres:PASSWORD@localhost:5432/energy"
 # engine = create_engine(f'postgresql+psycopg2://{path_string}')
 
-Base = automap_base()
-Base.prepare(engine, reflect=True)
+# Base = automap_base()
+# Base.prepare(engine, reflect=True)
 
 # energyData = Base.classes.energy_data
 # incomeData = Base.classes.income_data
@@ -37,7 +51,6 @@ def index():
 
 @app.route('/map')
 def map():
-    
     return render_template('map.html')
 
 # @app.route('/results', methods=['GET','POST'])
@@ -51,7 +64,6 @@ def results():
     #build and execute energy query
     in_string = ""
     query_string =f'select state_id, sum (generation_megawatthours) from energy_data where energy_source in ('
-
     for i in sources: #creates string of sources for SQL query
         if i == sources[0]:
             in_string += f'\'{i}\''
@@ -60,7 +72,6 @@ def results():
 
     query_string += in_string+f') and year_energy = {year} group by state_id'
     
-
     results_energy = pd.read_sql(query_string, con=engine).rename(columns={'sum':'megawatthours'})
 
     #execute population query
@@ -124,33 +135,13 @@ def results():
 
     # return jsonify(income_data)
 
-# @app.route('/population')
-# def population():
-    # results_population = session.query(populationData.year_population, 
-    # populationData.state_id, populationData.population).all()
-    
-    # # qs2 = request.query_string
-    # # print(qs2)
-    # # name = request.args.get('category').split(',')
-    # # print(type(name))
-    # # Group = request.args.get('Group')
-    # # print(Group)
- 
-    # population_data = []
- 
-    # for i in results_population:
-    #      population_data.append(i)
-     
-    # return jsonify(population_data)
-
-
-   
-
-
-    
 # @app.route('/incomefiltered')
 # def incomefiltered():
     # return jsonify(session.query(incomeData.year_income, incomeData.state_id, incomeData.median_income)).
 
 if __name__ == '__main__':
+<<<<<<< HEAD
     app.run(debug=True, port=8050)
+=======
+    app.run(debug=True)
+>>>>>>> 6ec76b02ad7c245a810ea7dc0e09e5127192d300
