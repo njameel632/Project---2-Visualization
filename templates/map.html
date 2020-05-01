@@ -34,35 +34,35 @@
           
           <div class="key">
             <p class="key"> Select a Year:</p>
-            <form action="/results" , method="POST">
-              <input type="number" min="1990" max="2018" placeholder="YEAR" class="slider" id="myRange"> <br>
+            <form id ="map_form" action="/map" , method="POST">
+              <input name= "year" type="number" min="1990" max="2018" placeholder="YEAR" class="slider" id="year_select"> <br>
         
-              <input type="checkbox" id="Green Resources" name="Green Resources" checked>
+              <input type="checkbox" id="Green Resources" class="Green" name="Green Resources" checked>
               <label for="Green Resources"> Green Resources</label><br>
         
-              <input type="checkbox" id="Wind" name="Wind">
+              <input type="checkbox" id="Wind" class="Green" name="Wind">
               <label for="Wind"> Wind</label><br>
         
-              <input type="checkbox" id="Hydroelectric Conventional" name="Hydroelectric Conventional">
+              <input type="checkbox" id="Hydroelectric Conventional" class="Green" name="Hydroelectric Conventional">
               <label for="Hydroelectric Conventional"> Hydroelectric</label><br>
         
-              <input type="checkbox" id="Solar Thermal and Photovoltaic" name="Solar Thermal and Photovoltaic">
+              <input type="checkbox" id="Solar Thermal and Photovoltaic" class="Green" name="Solar Thermal and Photovoltaic">
               <label for="Solar Thermal and Photovoltaic"> Solar Thermal and Photovoltaic</label><br>
               <br>
 
-              <input type="checkbox" id="Nuclear" name="Nuclear">
+              <input type="checkbox" id="Nuclear" class="Green" name="Nuclear">
               <label for="Nuclear"> Nuclear</label><br>
               <br>
 
-              <input type="checkbox" id="Geothermal" name="Geothermal">
+              <input type="checkbox" id="Geothermal" class="Green" name="Geothermal">
               <label for="Geothermal"> Geothermal</label><br>
               <br>
 
-              <input type="checkbox" id="Pumped Storage" name="Pumped Storage">
+              <input type="checkbox" id="Pumped Storage" class="Green" name="Pumped Storage">
               <label for="Pumped Storage"> Pumped Storage</label><br>
               <br>
 
-              <input type="checkbox" id="Conventional Resources" name="Conventional Resources" checked>
+              <input type="checkbox" id="Conventional Resources" class="Conventional" name="Conventional Resources" checked>
               <label for="Conventional Resources"> Conventional Resources</label><br>
               
         
@@ -134,6 +134,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
-</body>
+  <script type="Javascript" src="logic.js"></script>
+
+  </body>
 
 </html>

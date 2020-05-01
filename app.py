@@ -11,16 +11,21 @@ from sqlalchemy import func
 
 app = Flask(__name__)
 
-rds_connection_string = "postgres://NoamanJameel:Noamanj1919@localhost:5432/postgres"
+#Noaman
+# rds_connection_string = "postgres://NoamanJameel:Noamanj1919@localhost:5432/postgres"
+# engine = create_engine(rds_connection_string)
 
-engine = create_engine(rds_connection_string)
+#Luke
+path_string = "postgres:postgres@localhost:5432/energy"
+engine = create_engine(f'postgresql+psycopg2://{path_string}')
+
 Base = automap_base()
 Base.prepare(engine, reflect=True)
 
-energyData = Base.classes.energy_data
-incomeData = Base.classes.income_data
-populationData = Base.classes.population_data
-session = Session(engine)
+# energyData = Base.classes.energy_data
+# incomeData = Base.classes.income_data
+# populationData = Base.classes.population_data
+# session = Session(engine)
 
 @app.route('/')
 def index():
@@ -28,26 +33,17 @@ def index():
 
 @app.route('/map')
 def map():
+    
+    
     return render_template('map.html')
 
+# @app.route('/results', methods=['GET','POST'])
 @app.route('/results')
 def results():
     year = request.args.get('year')
     sources = request.args.get('sources').split(",")
-
-    #clean input_sources
-    def clean(list):
-        # sources=[]
-        # for i in input_sources:
-        #     if i == 'Green Energy':
-        #         sources.append('Geothermal','Pumped Storage','Solar Thermal and Photovoltaic','Nuclear','Hydroelectric Conventional')
-        #     elif i == 'Conventional Energy':
-        #         sources.append('Natural Gas','Petroleum''Coal','Other Biomass','Wood and Wood Derived Fuels','Other Gases')
-        #     else:
-        #         for x in sources:
-        #             if i = x:
-        #                 break
-        #         sources.append(i)
+    # year=1990
+    # sources =['Wind','Coal']
 
     #build and execute energy query
     in_string = ""
@@ -64,44 +60,19 @@ def results():
     results_energy = pd.read_sql(query_string, con=engine).rename(columns={'sum':'megawatthours'})
 
     #execute population query
-    results_population = pd.read_sql(f'select state_id, population from population_data where year_population = {year}')
+    results_population = pd.read_sql(f'select state_id, population from population_data where year_population = {year}', con=engine)
 
     #join query results to return JSONIFY
     results = pd.merge(results_energy, results_population, on = "state_id")
 
-    #change dataframe obj to list of dictionaries.
-    results_list = []
-    for result in results:
-        row = {}
-        row["state_id"] = result[0]
-        row["megawatthours"] = result[1]
-        row['population'] = result[2]
-        results_list.append(row)
+    #change dataframe obj to list of dictionaries
+    results_dict = results.to_dict('records')
+    results_dict
 
-    # session.query(populationData.year_population, 
-    # populationData.state_id, populationData.population).all()
+    return jsonify(results_dict)
 
-    # results_energy = session.query(energyData.year_energy, energyData.state_id, 
-    # energyData.type_of_producer, energyData.energy_source,energyData.generation_megawatthours,
-    # energyData.energy_type).all()
-    
-    # qs = request.query_string
-    # print(qs)
-    # name = request.args.get('category').split(',')
-    # print(type(name))
-    # Group = request.args.get('Group')
-    # print(Group)
-
-    # energy_data = []
-
-    # for i in results_energy:
-    #     energy_data.append(i)
-
-
-    return jsonify(results_list)
-
-@app.route('/income')
-def income(): 
+# @app.route('/income')
+# def income(): 
     # results_income = session.query(incomeData.year_income, incomeData.state_id, incomeData.median_income).\
     # order_by(year_income, state_id).all()
     # qs1 = request.query_string
@@ -119,8 +90,8 @@ def income():
 
     # return jsonify(income_data)
 
-@app.route('/population')
-def population():
+# @app.route('/population')
+# def population():
     # results_population = session.query(populationData.year_population, 
     # populationData.state_id, populationData.population).all()
     
@@ -139,18 +110,16 @@ def population():
     # return jsonify(population_data)
 
 #Grouping Energy Sources Data. Energy produced By years and states
-@app.route('/results')
-def results():
-    return jsonify(session.query(energyData.year_energy,energyData.state_id, energyData.energy_type,
-    func.sum(energyData.generation_megawatthours)).\
-    group_by(energyData.year_energy,energyData.state_id, energyData.energy_type).order_by(energyData.year_energy,
-    energyData.state_id).all())
+# @app.route('/results')
+# def results():
+    # return jsonify(session.query(energyData.year_energy,energyData.state_id, energyData.energy_type,
+    # func.sum(energyData.generation_megawatthours)).\
+    # group_by(energyData.year_energy,energyData.state_id, energyData.energy_type).order_by(energyData.year_energy,
+    # energyData.state_id).all())
 
-@app.route('/incomefiltered')
-def incomefiltered():
+# @app.route('/incomefiltered')
+# def incomefiltered():
     # return jsonify(session.query(incomeData.year_income, incomeData.state_id, incomeData.median_income)).
-    # 
-
 
 if __name__ == '__main__':
     app.run(debug=True)
