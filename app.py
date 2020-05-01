@@ -12,16 +12,16 @@ from sqlalchemy import func
 app = Flask(__name__)
 
 #Clarence
-rds_connection_string = "postgres://postgres:Group1Washington@localhost:5432/postgres"
-engine = create_engine(rds_connection_string)
-
-#Noaman
-# rds_connection_string = "postgres://NoamanJameel:Noamanj1919@localhost:5432/postgres"
+# rds_connection_string = "postgres://postgres:Group1Washington@localhost:5432/postgres"
 # engine = create_engine(rds_connection_string)
 
+#Noaman
+rds_connection_string = "postgres://NoamanJameel:Noamanj1919@localhost:5432/postgres"
+engine = create_engine(rds_connection_string)
+
 #Luke
-path_string = "postgres:postgres@localhost:5432/energy"
-engine = create_engine(f'postgresql+psycopg2://{path_string}')
+# path_string = "postgres:postgres@localhost:5432/energy"
+# engine = create_engine(f'postgresql+psycopg2://{path_string}')
 
 #Erica
 # path_string = "ericamatrese:Harrisburg1@localhost:5432/energy"
@@ -85,7 +85,7 @@ def results():
     conv_string = 'select state_id, sum(generation_megawatthours) from energy_data WHERE energy_type = \'Conventional\' Group By state_id'
     conventional = pd.read_sql(conv_string, con=engine)
 
-    greenconv = pd.merge(green, conventional, on = "state_id").rename(columns={'sum_x':'Green Energy','sum_y':'Conventional Energy'})
+    greenconv = pd.merge(green, conventional, on = "state_id").rename(columns={'sum_x':'Green_Energy','sum_y':'Conventional_Energy'})
     greenconv_dict = results_energy.to_dict('records')
 
 
@@ -99,7 +99,7 @@ def results():
          from energy_data WHERE energy_type = \'Conventional\' Group By year_energy, energy_type'
     conv_str_line = pd.read_sql(conv_str, con=engine)
 
-    green_conv = pd.merge(green_conv_line, conv_str_line, on="year_energy").rename(columns={'sum_x':'Green Energy','sum_y':'Conventional'})
+    green_conv = pd.merge(green_conv_line, conv_str_line, on="year_energy").rename(columns={'sum_x':'Green_Energy','sum_y':'Conventional_Energy'})
     green_conventional_dict = green_conv.to_dict('records')
 
     #  Master Return Dict
@@ -134,8 +134,4 @@ def results():
     # return jsonify(session.query(incomeData.year_income, incomeData.state_id, incomeData.median_income)).
 
 if __name__ == '__main__':
-<<<<<<< HEAD
     app.run(debug=True, port=8050)
-=======
-    app.run(debug=True)
->>>>>>> 6ec76b02ad7c245a810ea7dc0e09e5127192d300
