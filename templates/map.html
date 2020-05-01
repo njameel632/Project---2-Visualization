@@ -15,38 +15,40 @@
 
   </nav>
 
-<div class="container">
   <div class="container">
-    <div class="row">
-      <div class="col">
-  <img src="static/field.jpg" width=100% padding-top: 8rem; padding-bottom: 8rem;>
-</div>
-</div>
-<div>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <h2></h2>
-</div>
-</nav>
-</div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="static/field.jpg" width=100% padding-top: 8rem; padding-bottom: 8rem;>
+        </div>
+      </div>
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <h2></h2>
+      </div>
+      </nav>
+    </div>
     <div class="container">
       <div class="row">
         <div class="col-3">
-          
+
           <div class="key">
             <p class="key"> Select a Year:</p>
-            <form id ="map_form" action="/map" , method="POST">
-              <input name= "year" type="number" min="1990" max="2018" placeholder="YEAR" class="slider" id="year_select"> <br>
-        
-              <input type="checkbox" id="Green Resources" class="Green" name="Green Resources" checked>
+            <form action="/results" , method="POST">
+              <input type="number" min="1990" max="2018" placeholder="YEAR" class="slider" id="myRange"> <br>
+
+              <input type="checkbox" id="Green Resources" name="Green Resources" checked>
               <label for="Green Resources"> Green Resources</label><br>
-        
-              <input type="checkbox" id="Wind" class="Green" name="Wind">
+
+              <input type="checkbox" id="Wind" name="Wind">
               <label for="Wind"> Wind</label><br>
-        
-              <input type="checkbox" id="Hydroelectric Conventional" class="Green" name="Hydroelectric Conventional">
+              <script>
+              </script>
+
+              <input type="checkbox" id="Hydroelectric Conventional" name="Hydroelectric Conventional">
               <label for="Hydroelectric Conventional"> Hydroelectric</label><br>
-        
-              <input type="checkbox" id="Solar Thermal and Photovoltaic" class="Green" name="Solar Thermal and Photovoltaic">
+
+              <input type="checkbox" id="Solar Thermal and Photovoltaic" name="Solar Thermal and Photovoltaic">
               <label for="Solar Thermal and Photovoltaic"> Solar Thermal and Photovoltaic</label><br>
               <br>
 
@@ -64,23 +66,23 @@
 
               <input type="checkbox" id="Conventional Resources" class="Conventional" name="Conventional Resources" checked>
               <label for="Conventional Resources"> Conventional Resources</label><br>
-              
-        
+
+
               <input type="checkbox" id="Coal" name="Coal">
               <label for="Coal"> Coal</label><br>
-        
+
               <input type="checkbox" id="Natural Gas" name="Natural Gas">
               <label for="Natural Gas"> Natural Gas</label><br>
-        
+
               <input type="checkbox" id="Petroleum" name="Petroleum">
               <label for="Petroleum"> Petroleum</label><br>
-        
+
               <input type="checkbox" id="Wood and Wood Derived Fuels" name="Wood and Wood Derived Fuels">
               <label for="Wood and Wood Derived Fuels"> Wood/Wood Derived</label><br>
-        
+
               <input type="checkbox" id="Other Biomass" name="Other Biomass">
               <label for="Other Biomass"> Other Biomass</label><br>
-        
+
               <input type="checkbox" id="Other Gases" name="Other Gases">
               <label for="Other Gases"> Other Gases</label><br>
 
@@ -93,37 +95,37 @@
         </div>
         <div class="col-8">
           <h1> Energy Resources by State</h1>
-    <!-- <div style="display: table;"> -->
-    <img src=MAP style="float:right; width:70%">
-  </div>
+          <!-- <div style="display: table;"> -->
+          <img src=MAP style="float:right; width:70%">
         </div>
       </div>
-      <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <h2></h2>
-        </div>
-        </nav>
-        </div>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="media">
-              <img class="align-self-start mr-3" src="..." alt="Generic placeholder image">
-              <div class="media-body">
-                <h5 class="mt-0">Bar Chart: Green vs Conventional Energy by State</h5>
-                <p>This can be a quick sentence about the barchart.</p>
-              </div>
-            </div>
+    </div>
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <h2></h2>
+    </div>
+    </nav>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="media">
+          <img class="align-self-start mr-3" src="..." alt="Generic placeholder image">
+          <div class="media-body">
+            <h5 class="mt-0">Bar Chart: Green vs Conventional Energy by State</h5>
+            <p>This can be a quick sentence about the barchart.</p>
           </div>
-          <div class="col">
-            <div class="media">
-              <img class="align-self-start mr-3" src="...">
-              <div class="media-body">
-                <h5 class="mt-0">Line Graph</h5>
-                <p>This can be a quick sentence about the line graph.</p>
-              </div>
-            </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="media">
+          <img class="align-self-start mr-3" src="...">
+          <div class="media-body">
+            <h5 class="mt-0">Line Graph</h5>
+            <p>This can be a quick sentence about the line graph.</p>
           </div>
+        </div>
+      </div>
     </div>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
