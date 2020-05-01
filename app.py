@@ -37,6 +37,10 @@ engine = create_engine(f'postgresql+psycopg2://{path_string}')
 # path_string = "postgres:PASSWORD@localhost:5432/energy"
 # engine = create_engine(f'postgresql+psycopg2://{path_string}')
 
+#Jonathan
+# rds_connection_string = "postgres://postgres:postgres@localhost:5432/test_db"
+# engine = create_engine(rds_connection_string)
+
 # Base = automap_base()
 # Base.prepare(engine, reflect=True)
 
