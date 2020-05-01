@@ -12,12 +12,12 @@ from sqlalchemy import func
 app = Flask(__name__)
 
 #Noaman
-# rds_connection_string = "postgres://NoamanJameel:Noamanj1919@localhost:5432/postgres"
-# engine = create_engine(rds_connection_string)
+rds_connection_string = "postgres://NoamanJameel:Noamanj1919@localhost:5432/postgres"
+engine = create_engine(rds_connection_string)
 
 #Luke
-path_string = "postgres:postgres@localhost:5432/energy"
-engine = create_engine(f'postgresql+psycopg2://{path_string}')
+# path_string = "postgres:postgresl@localhost:5432/energy"
+# engine = create_engine(f'postgresql+psycopg2://{path_string}')
 
 Base = automap_base()
 Base.prepare(engine, reflect=True)
@@ -34,16 +34,15 @@ def index():
 @app.route('/map')
 def map():
     
-    
     return render_template('map.html')
 
 # @app.route('/results', methods=['GET','POST'])
 @app.route('/results')
 def results():
-    year = request.args.get('year')
-    sources = request.args.get('sources').split(",")
-    # year=1990
-    # sources =['Wind','Coal']
+    # year = request.args.get('year')
+    # sources = request.args.get('sources').split(",")
+    year=1990
+    sources =['Wind','Coal']
 
     #build and execute energy query
     in_string = ""
@@ -57,6 +56,7 @@ def results():
 
     query_string += in_string+f') and year_energy = {year} group by state_id'
     
+
     results_energy = pd.read_sql(query_string, con=engine).rename(columns={'sum':'megawatthours'})
 
     #execute population query
@@ -66,8 +66,38 @@ def results():
     results = pd.merge(results_energy, results_population, on = "state_id")
 
     #change dataframe obj to list of dictionaries
-    results_dict = results.to_dict('records')
-    results_dict
+    map_dict = results.to_dict('records')
+
+
+    #  Green Vs Conventional Energy Graph By State
+
+    green_str = 'select state_id, sum(generation_megawatthours) from energy_data WHERE energy_type = \'Green Energy\' Group By state_id'
+    green = pd.read_sql(green_str, con=engine)
+    conv_string = 'select state_id, sum(generation_megawatthours) from energy_data WHERE energy_type = \'Conventional\' Group By state_id'
+    conventional = pd.read_sql(conv_string, con=engine)
+
+    greenconv = pd.merge(green, conventional, on = "state_id").rename(columns={'sum_x':'Green Energy','sum_y':'Conventional Energy'})
+    greenconv_dict = results_energy.to_dict('records')
+
+
+    # Green VS Conv Over time
+
+    green_conv_str = 'select year_energy, sum(generation_megawatthours)\
+         from energy_data WHERE energy_type = \'Green Energy\' Group By year_energy, energy_type'
+    green_conv_line = pd.read_sql(green_conv_str, con=engine)
+
+    conv_str = 'select year_energy, sum(generation_megawatthours)\
+         from energy_data WHERE energy_type = \'Conventional\' Group By year_energy, energy_type'
+    conv_str_line = pd.read_sql(conv_str, con=engine)
+
+    green_conv = pd.merge(green_conv_line, conv_str_line, on="year_energy").rename(columns={'sum_x':'Green Energy','sum_y':'Conventional'})
+    green_conventional_dict = green_conv.to_dict('records')
+
+    #  Master Return Dict
+    results_dict = {}
+    results_dict['map'] = map_dict
+    results_dict['bargraph'] = greenconv_dict
+    results_dict['linegraph'] = green_conventional_dict
 
     return jsonify(results_dict)
 
@@ -109,14 +139,11 @@ def results():
      
     # return jsonify(population_data)
 
-#Grouping Energy Sources Data. Energy produced By years and states
-# @app.route('/results')
-# def results():
-    # return jsonify(session.query(energyData.year_energy,energyData.state_id, energyData.energy_type,
-    # func.sum(energyData.generation_megawatthours)).\
-    # group_by(energyData.year_energy,energyData.state_id, energyData.energy_type).order_by(energyData.year_energy,
-    # energyData.state_id).all())
 
+   
+
+
+    
 # @app.route('/incomefiltered')
 # def incomefiltered():
     # return jsonify(session.query(incomeData.year_income, incomeData.state_id, incomeData.median_income)).
