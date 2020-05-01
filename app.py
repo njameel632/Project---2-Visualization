@@ -11,15 +11,9 @@ from sqlalchemy import func
 
 app = Flask(__name__)
 
-<<<<<<< HEAD
 #Clarence
 rds_connection_string = "postgres://postgres:Group1Washington@localhost:5432/postgres"
 engine = create_engine(rds_connection_string)
-=======
-#Noaman
-# rds_connection_string = "postgres://NoamanJameel:Noamanj1919@localhost:5432/postgres"
-# engine = create_engine(rds_connection_string)
->>>>>>> 6ec76b02ad7c245a810ea7dc0e09e5127192d300
 
 #Noaman
 # rds_connection_string = "postgres://NoamanJameel:Noamanj1919@localhost:5432/postgres"
@@ -32,10 +26,6 @@ engine = create_engine(f'postgresql+psycopg2://{path_string}')
 #Erica
 # path_string = "ericamatrese:Harrisburg1@localhost:5432/energy"
 # engine = create_engine(f"postgresql://{path_string}")
-
-#Clarence
-# path_string = "postgres:PASSWORD@localhost:5432/energy"
-# engine = create_engine(f'postgresql+psycopg2://{path_string}')
 
 #Jonathan
 # rds_connection_string = "postgres://postgres:postgres@localhost:5432/test_db"
