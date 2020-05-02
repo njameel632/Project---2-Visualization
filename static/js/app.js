@@ -1,70 +1,73 @@
-function getLine() {
-  d3.json("/results").then((importeddata) => {
-    console.log(importeddata);
+d3.json("results.json").then(function (data) {
+  console.log(data);
 
-    var data = importeddata;
+  var bargraph = data.bargraph;
 
-    // var filtereddata = data.linegraph.filter((y) => y.year_energy);
+  var trace1 = {
+    x: bargraph.map((row) => row.year_energy),
+    y: bargraph.map((row) => row.Conventional_Energy),
+    text: bargraph.map((row) => row.Conventional_Energy),
+    name: "Energy",
+    type: "bar",
+    orientation: "h",
+  };
 
-    var trace1 = {
-      x: data.map((row) => row.Conventional_Energy),
-      y: data.map((row) => row.year_energy),
-      type: "line",
-      //   mode: "lines",
-    };
+  var trace2 = {
+    x: bargraph.map((row) => row.year_energy),
+    y: bargraph.map((row) => row.Green_Energy),
+    type: "bar",
+    orientation: "h",
+  };
 
-    var trace2 = {
-      x: data.map((row) => row.year_energy),
-      y: data.map((row) => row.Green_Energy),
-      type: "line",
-      //   mode: "lines",
-    };
+  // Apply the group bar mode to the layout
+  var layout = {
+    title: "Energy Comparison",
+    margin: {
+      l: 100,
+      r: 100,
+      t: 100,
+      b: 100,
+    },
+  };
 
-    var chartData = [trace1, trace2];
+  var chartdata = [trace1, trace2];
 
-    var layout = {
-      title: "Green VS Conventional Energy Over Time",
-      margin: {
-        l: 100,
-        r: 100,
-        t: 100,
-        b: 100,
-      },
-    };
+  // Render the plot to the div tag with id "plot"
+  Plotly.newPlot("bar_graph", chartdata, layout);
+});
 
-    // Render the plot to the div tag with id "plot"
-    Plotly.newPlot("plot1", chartData, layout);
-  });
-}
+//  Line Graph
 
-// Getting Bargraph Data
+d3.json("results.json").then(function (data1) {
+  console.log(data1);
 
-function getBar(bar) {
-  d3.json("/results").then((response) => {
-    console.log(response);
+  var linegraph = data1.linegraph;
 
-    bar_data = response["bargraph"];
+  var trace3 = {
+    x: linegraph.map((c) => c.year_energy),
+    y: linegraph.map((c) => c.Conventional_Energy),
+    type: "scatter",
+    mode: "lines",
+  };
 
-    var trace3 = {
-      x: bar_data.map((b) => b.state_id),
-      y: bar_data.map((m) => m.megawatthours),
-      type: "bar",
-    };
+  var trace4 = {
+    x: linegraph.map((c) => c.year_energy),
+    y: linegraph.map((c) => c.Green_Energy),
+    type: "scatter",
+    mode: "lines",
+  };
 
-    var charData1 = [trace3];
+  var layout1 = {
+    title: "Line Graph For Energy Production Over Time 1990-2018",
+    margin: {
+      l: 100,
+      r: 100,
+      t: 100,
+      b: 100,
+    },
+  };
 
-    var layout1 = {
-      title: "Energy Production By State Per From 1990-2018",
-      margin: {
-        l: 100,
-        r: 100,
-        t: 100,
-        b: 100,
-      },
-    };
+  var chartdata1 = [trace3, trace4];
 
-    Plotly.newPlot("plot", charData1, layout1);
-  });
-}
-
-getLine();
+  Plotly.newPlot("line_graph", chartdata1, layout1);
+});
