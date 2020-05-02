@@ -23,13 +23,15 @@ function map_update() {
 
 map_update();
 
+
+
+
 // Function to determine states' color
 function rankColor(state){
 
 }
 
 // Creating map object centered on US
-
 var map = L.map("map", {
     center: [39.8283, -98.5795],
     zoom: 18
@@ -46,7 +48,7 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 // Our style object
 var mapStyle = {
     color: "white",
-    fillColor: rankColor,
+    fillColor: rankColor, // reference function that gives color assignments based on percentile of range.
     fillOpacity: 0.5,
     weight: 1.5
   };
@@ -59,8 +61,7 @@ var state_outline_geoJSON ="https://eric.clst.org/assets/wiki/uploads/Stuff/gz_2
 var energy_query="?sources=&year="
 d3.json()
 
-
 d3.json(state_outline_geoJSON, function(data) {
     // Creating a GeoJSON layer with the retrieved data
-    L.geoJson(data).addTo(map);
+    L.geoJson(data, {style:mapStyle}).addTo(map);
   });
