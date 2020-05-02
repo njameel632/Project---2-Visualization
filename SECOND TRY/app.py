@@ -49,7 +49,8 @@ def results():
     #build and execute map energy query
     energy_string ='select state_id, sum (generation_megawatthours) from energy_data where energy_type = \'Green Energy\' group by state_id'
     results_energy = pd.read_sql(energy_string, con=engine).rename(columns={'sum':'megawatthours'})
-
+    
+    results_energy_paired = 
     #change dataframe obj to list of dictionaries
     map_dict = results_energy.to_dict('records')
 
