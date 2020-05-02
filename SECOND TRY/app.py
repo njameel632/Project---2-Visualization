@@ -16,12 +16,12 @@ app = Flask(__name__)
 # engine = create_engine(rds_connection_string)
 
 #Noaman
-# rds_connection_string = "postgres://NoamanJameel:Noamanj1919@localhost:5432/postgres"
-# engine = create_engine(rds_connection_string)
+rds_connection_string = "postgres://NoamanJameel:Noamanj1919@localhost:5432/postgres"
+engine = create_engine(rds_connection_string)
 
 #Luke
-path_string = "postgres:postgres@localhost:5432/energy"
-engine = create_engine(f'postgresql+psycopg2://{path_string}')
+# path_string = "postgres:postgres@localhost:5432/energy"
+# engine = create_engine(f'postgresql+psycopg2://{path_string}')
 
 #Erica
 # path_string = "ericamatrese:Harrisburg1@localhost:5432/energy"

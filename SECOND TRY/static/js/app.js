@@ -1,4 +1,4 @@
-d3.json("results.json").then(function (data) {
+d3.json("/results").then(function (data) {
   console.log(data);
 
   var bargraph = data.bargraph;
@@ -33,15 +33,13 @@ d3.json("results.json").then(function (data) {
   var chartdata = [trace1, trace2];
 
   // Render the plot to the div tag with id "plot"
-  Plotly.newPlot("bar_graph", chartdata, layout);
-});
+  Plotly.newPlot("line_graph", chartdata, layout);
+
 
 //  Line Graph
 
-d3.json("results.json").then(function (data1) {
-  console.log(data1);
 
-  var linegraph = data1.linegraph;
+  var linegraph = data.linegraph;
 
   var trace3 = {
     x: linegraph.map((c) => c.year_energy),
@@ -69,5 +67,5 @@ d3.json("results.json").then(function (data1) {
 
   var chartdata1 = [trace3, trace4];
 
-  Plotly.newPlot("line_graph", chartdata1, layout1);
+  Plotly.newPlot("bar_graph", chartdata1, layout1);
 });
