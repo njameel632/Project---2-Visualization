@@ -1,5 +1,5 @@
 # initdb.py
 
-from main import db
+from app.py import db
 
 db.create_all()
