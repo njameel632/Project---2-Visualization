@@ -86,7 +86,7 @@ def results():
     conventional = pd.read_sql(conv_string, con=engine)
 
     greenconv = pd.merge(green, conventional, on = "state_id").rename(columns={'sum_x':'Green_Energy','sum_y':'Conventional_Energy'})
-    greenconv_dict = results_energy.to_dict('records')
+    greenconv_dict = greenconv.to_dict('records')
 
 
     # Green VS Conv Over time
