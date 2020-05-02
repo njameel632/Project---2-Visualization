@@ -4,77 +4,80 @@
 <head>
   <meta charset="UTF-8">
   <title>Energy Sources in US</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+  <!-- Bootstrap & Jquerrty -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- Leaflet  -->
+  <link rel="stylesheet" href="static/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin="">
+  <script src="static/leaflet.js.download"
+    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+    crossorigin=""></script>
+  <!-- D3 -->
+  <script src=“https://d3js.org/d3.v5.min.js”></script>
+  <!-- plotly -->
+  <script src=“https://cdn.plot.ly/plotly-latest.min.js”></script>
+  <!-- LOCAL JS -->
+  <script type="text/javascript" src="static/app.js"></script>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <br>
-  </nav>
-  <div class="container">
+  <!-- Nav bar -->
+  <nav class="navbar navbar-expand-lg" style="background-color: rgb(25, 114, 47);">
     <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="centered">Energy Sources</div>
-          <div class="background">
-            <img src="static/field.jpg" opacity=50% width=100% padding-top: 8rem; padding-bottom: 8rem;>
-          </div>
+      <h1 class="text-center">Going Green</h1>
+    </div>
+  </nav>
+
+  <div class="container"></div>
+  
+  <!-- IMAGE -->
+    <div class="row">
+      <div class="thumbnail text-center">
+        <img src="static/field.jpg" alt="windmills" class="img-responsive">
+        <div class="caption">
+          <p>This project displays data related to energy sources
+            used in the US over the last 3 decades.</p>
         </div>
       </div>
     </div>
-    <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    </div>
-    </nav>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="center">
-        <h5>This project displays data related to energy sources used in the US and compares Green Energy vs
-          Conventional Energy by year over the last 3 decades. Which bares the question ....</h5>
-        <h5>Has the US been moving towards greener, more sustainable energy sources?</h5>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <a class="center" href="/map">Interactive Analysis</a>
 
+    <!-- MAP PLACEHOLDER -->
+    <div class="row" id="map">
+      <div class="col-12" style="padding-bottom: 20px; padding-top: 20px;">
+        <img src="static/map.jpg" alt="map of the US" class="img-responsive">
+      </div>
+    </div>
+
+    <div class="row">
+      
+      <!-- LINE GRAPH PLACEHOLDER -->
+      <div class=" col-md-6 text-center" id="line_graph">
+      <h1>LINE GRAPH</h1>
+      <img src=" static/line.png" alt="line graph" class="img-responsive">
+      </div>
+
+      <!-- BAR GRAPH PLACEHOLDER -->
+      <div class="col-md-6 text-center" id="bar_graph">
+        <h1>BAR GRAPH</h1>
+        <img src="static/bar.gif" alt="bar graph" class="img-responsive">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="text-center">
+        <h1>Team 1</h1>
+      </div>
+      <div class="text-center">
+        <p>Luke, Erica, Noaman, Jonathan, Clarence</p>
       </div>
     </div>
   </div>
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h11>Team 1</h11><br>
-        <h11>Luke, Erica, Noaman, Jonathan, Clarence</h11><br>
-      </div>
-
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-      </script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-      </script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-      </script>
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-      </script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-      </script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-      </script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.7/d3.min.js"></script>
-      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-      <script src="app.js"></script>
-      =======
 </body>
 
 </html>
