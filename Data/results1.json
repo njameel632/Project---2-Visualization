@@ -1,0 +1,603 @@
+{
+  "bargraph": [
+    {
+      "Conventional_Energy": 6235210842.0, 
+      "Green_Energy": 4941979840.0, 
+      "state_id": "CA"
+    }, 
+    {
+      "Conventional_Energy": 451711311.0, 
+      "Green_Energy": 608481186.0, 
+      "state_id": "NH"
+    }, 
+    {
+      "Conventional_Energy": 792729795.0, 
+      "Green_Energy": 2276345568.0, 
+      "state_id": "OR"
+    }, 
+    {
+      "Conventional_Energy": 18966442088.0, 
+      "Green_Energy": 3103708172.0, 
+      "state_id": "TX"
+    }, 
+    {
+      "Conventional_Energy": 1632767493.0, 
+      "Green_Energy": 256016012.0, 
+      "state_id": "ND"
+    }, 
+    {
+      "Conventional_Energy": 1597654250.0, 
+      "Green_Energy": 266588816.0, 
+      "state_id": "NV"
+    }, 
+    {
+      "Conventional_Energy": 7161741519.0, 
+      "Green_Energy": 920127458.0, 
+      "state_id": "OH"
+    }, 
+    {
+      "Conventional_Energy": 4965781540.0, 
+      "Green_Energy": 188647130.0, 
+      "state_id": "KY"
+    }, 
+    {
+      "Conventional_Energy": 4159278848.0, 
+      "Green_Energy": 3748343303.0, 
+      "state_id": "NY"
+    }, 
+    {
+      "Conventional_Energy": 570248828.0, 
+      "Green_Energy": 29022015.0, 
+      "state_id": "HI"
+    }, 
+    {
+      "Conventional_Energy": 1824019568.0, 
+      "Green_Energy": 91522836.0, 
+      "state_id": "NM"
+    }, 
+    {
+      "Conventional_Energy": 1993350626.0, 
+      "Green_Energy": 541361084.0, 
+      "state_id": "MS"
+    }, 
+    {
+      "Conventional_Energy": 6604751905.0, 
+      "Green_Energy": 103678925.0, 
+      "state_id": "IN"
+    }, 
+    {
+      "Conventional_Energy": 4708828246.0, 
+      "Green_Energy": 105667068.0, 
+      "state_id": "WV"
+    }, 
+    {
+      "Conventional_Energy": 1181804519.0, 
+      "Green_Energy": 617498246.0, 
+      "state_id": "NE"
+    }, 
+    {
+      "Conventional_Energy": 3960428631.0, 
+      "Green_Energy": 642179886.0, 
+      "state_id": "MO"
+    }, 
+    {
+      "Conventional_Energy": 9836824413.0, 
+      "Green_Energy": 1630040616.0, 
+      "state_id": "FL"
+    }, 
+    {
+      "Conventional_Energy": 563442173.0, 
+      "Green_Energy": 302971583.0, 
+      "state_id": "ME"
+    }, 
+    {
+      "Conventional_Energy": 1997927974.0, 
+      "Green_Energy": 979957220.0, 
+      "state_id": "AR"
+    }, 
+    {
+      "Conventional_Energy": 2621886913.0, 
+      "Green_Energy": 798590943.0, 
+      "state_id": "WI"
+    }, 
+    {
+      "Conventional_Energy": 4324447320.0, 
+      "Green_Energy": 2494011030.0, 
+      "state_id": "NC"
+    }, 
+    {
+      "Conventional_Energy": 893039433.0, 
+      "Green_Energy": 909080043.0, 
+      "state_id": "CT"
+    }, 
+    {
+      "Conventional_Energy": 184278772.0, 
+      "Green_Energy": 331887702.0, 
+      "state_id": "SD"
+    }, 
+    {
+      "Conventional_Energy": 366026381.0, 
+      "Green_Energy": 1247170.0, 
+      "state_id": "RI"
+    }, 
+    {
+      "Conventional_Energy": 3300730818.0, 
+      "Green_Energy": 410832904.0, 
+      "state_id": "OK"
+    }, 
+    {
+      "Conventional_Energy": 111966230.0, 
+      "Green_Energy": 624063172.0, 
+      "state_id": "ID"
+    }, 
+    {
+      "Conventional_Energy": 4989947668.0, 
+      "Green_Energy": 2026071176.0, 
+      "state_id": "GA"
+    }, 
+    {
+      "Conventional_Energy": 1952074507.0, 
+      "Green_Energy": 986364992.0, 
+      "state_id": "MN"
+    }, 
+    {
+      "Conventional_Energy": 7499851565.0, 
+      "Green_Energy": 4399256268.0, 
+      "state_id": "PA"
+    }, 
+    {
+      "Conventional_Energy": 1694280592.0, 
+      "Green_Energy": 875779773.0, 
+      "state_id": "MD"
+    }, 
+    {
+      "Conventional_Energy": 286377684.0, 
+      "Green_Energy": 78609358.0, 
+      "state_id": "AK"
+    }, 
+    {
+      "Conventional_Energy": 2464388584.0, 
+      "Green_Energy": 142391178.0, 
+      "state_id": "WY"
+    }, 
+    {
+      "Conventional_Energy": 4335983632.0, 
+      "Green_Energy": 965227808.0, 
+      "state_id": "LA"
+    }, 
+    {
+      "Conventional_Energy": 958631642.0, 
+      "Green_Energy": 636571792.0, 
+      "state_id": "MT"
+    }, 
+    {
+      "Conventional_Energy": 4917678493.0, 
+      "Green_Energy": 5214433952.0, 
+      "state_id": "IL"
+    }, 
+    {
+      "Conventional_Energy": 3074950162.0, 
+      "Green_Energy": 1918790486.0, 
+      "state_id": "TN"
+    }, 
+    {
+      "Conventional_Energy": 960138722.0, 
+      "Green_Energy": 5199100334.0, 
+      "state_id": "WA"
+    }, 
+    {
+      "Conventional_Energy": 1727849030.0, 
+      "Green_Energy": 1636462168.0, 
+      "state_id": "NJ"
+    }, 
+    {
+      "Conventional_Energy": 4686488101.0, 
+      "Green_Energy": 1630009327.0, 
+      "state_id": "MI"
+    }, 
+    {
+      "Conventional_Energy": 1924637994.0, 
+      "Green_Energy": 332800827.0, 
+      "state_id": "MA"
+    }, 
+    {
+      "Conventional_Energy": 5124269588.0, 
+      "Green_Energy": 2393741024.0, 
+      "state_id": "AL"
+    }, 
+    {
+      "Conventional_Energy": 2121516330.0, 
+      "Green_Energy": 84063138.0, 
+      "state_id": "UT"
+    }, 
+    {
+      "Conventional_Energy": 1978168540.0, 
+      "Green_Energy": 643716653.0, 
+      "state_id": "IA"
+    }, 
+    {
+      "Conventional_Energy": 22726766.0, 
+      "Green_Energy": 289527624.0, 
+      "state_id": "VT"
+    }, 
+    {
+      "Conventional_Energy": 2399965106.0, 
+      "Green_Energy": 246278076.0, 
+      "state_id": "CO"
+    }, 
+    {
+      "Conventional_Energy": 2296847232.0, 
+      "Green_Energy": 3001081466.0, 
+      "state_id": "SC"
+    }, 
+    {
+      "Conventional_Energy": 2638002993.0, 
+      "Green_Energy": 1570856400.0, 
+      "state_id": "VA"
+    }, 
+    {
+      "Conventional_Energy": 432401239.0, 
+      "Green_Energy": 731829.0, 
+      "state_id": "DE"
+    }, 
+    {
+      "Conventional_Energy": 3320190772.0, 
+      "Green_Energy": 2165754387.0, 
+      "state_id": "AZ"
+    }, 
+    {
+      "Conventional_Energy": 1819875402.0, 
+      "Green_Energy": 719688194.0, 
+      "state_id": "KS"
+    }
+  ], 
+  "linegraph": [
+    {
+      "Conventional_Energy": 5927598557.0, 
+      "Green_Energy": 2157604840.0, 
+      "year_energy": 2005
+    }, 
+    {
+      "Conventional_Energy": 5629124804.0, 
+      "Green_Energy": 2531164617.0, 
+      "year_energy": 2014
+    }, 
+    {
+      "Conventional_Energy": 5211703020.0, 
+      "Green_Energy": 2021745148.0, 
+      "year_energy": 1998
+    }, 
+    {
+      "Conventional_Energy": 4573394894.0, 
+      "Green_Energy": 1814012986.0, 
+      "year_energy": 1993
+    }, 
+    {
+      "Conventional_Energy": 5880311500.0, 
+      "Green_Energy": 2223144162.0, 
+      "year_energy": 2006
+    }, 
+    {
+      "Conventional_Energy": 4298803870.0, 
+      "Green_Energy": 1769619480.0, 
+      "year_energy": 1990
+    }, 
+    {
+      "Conventional_Energy": 4386099034.0, 
+      "Green_Energy": 1774225620.0, 
+      "year_energy": 1992
+    }, 
+    {
+      "Conventional_Energy": 5581755264.0, 
+      "Green_Energy": 2545391000.0, 
+      "year_energy": 2015
+    }, 
+    {
+      "Conventional_Energy": 4807459748.0, 
+      "Green_Energy": 2073772978.0, 
+      "year_energy": 1996
+    }, 
+    {
+      "Conventional_Energy": 4305306080.0, 
+      "Green_Energy": 1832814006.0, 
+      "year_energy": 1991
+    }, 
+    {
+      "Conventional_Energy": 4654397094.0, 
+      "Green_Energy": 1833313848.0, 
+      "year_energy": 1994
+    }, 
+    {
+      "Conventional_Energy": 5258565408.0, 
+      "Green_Energy": 2123006700.0, 
+      "year_energy": 1999
+    }, 
+    {
+      "Conventional_Energy": 5665292826.0, 
+      "Green_Energy": 2402663574.0, 
+      "year_energy": 2012
+    }, 
+    {
+      "Conventional_Energy": 5623982090.0, 
+      "Green_Energy": 2114299312.0, 
+      "year_energy": 2003
+    }, 
+    {
+      "Conventional_Energy": 5567749857.0, 
+      "Green_Energy": 2122100821.0, 
+      "year_energy": 2002
+    }, 
+    {
+      "Conventional_Energy": 5613651363.0, 
+      "Green_Energy": 2491101724.0, 
+      "year_energy": 2013
+    }, 
+    {
+      "Conventional_Energy": 5197740195.0, 
+      "Green_Energy": 2844608707.0, 
+      "year_energy": 2017
+    }, 
+    {
+      "Conventional_Energy": 5878901358.0, 
+      "Green_Energy": 2345507761.0, 
+      "year_energy": 2010
+    }, 
+    {
+      "Conventional_Energy": 5691076424.0, 
+      "Green_Energy": 2480898237.0, 
+      "year_energy": 2011
+    }, 
+    {
+      "Conventional_Energy": 5561888576.0, 
+      "Green_Energy": 2314916617.0, 
+      "year_energy": 2009
+    }, 
+    {
+      "Conventional_Energy": 4977954862.0, 
+      "Green_Energy": 1999165728.0, 
+      "year_energy": 1997
+    }, 
+    {
+      "Conventional_Energy": 5434456566.0, 
+      "Green_Energy": 2691384931.0, 
+      "year_energy": 2016
+    }, 
+    {
+      "Conventional_Energy": 5756671018.0, 
+      "Green_Energy": 2155974705.0, 
+      "year_energy": 2004
+    }, 
+    {
+      "Conventional_Energy": 5506409314.0, 
+      "Green_Energy": 2088212946.0, 
+      "year_energy": 2000
+    }, 
+    {
+      "Conventional_Energy": 5453505630.0, 
+      "Green_Energy": 1995968990.0, 
+      "year_energy": 2001
+    }, 
+    {
+      "Conventional_Energy": 5437880154.0, 
+      "Green_Energy": 2892327665.0, 
+      "year_energy": 2018
+    }, 
+    {
+      "Conventional_Energy": 5963529897.0, 
+      "Green_Energy": 2251638299.0, 
+      "year_energy": 2008
+    }, 
+    {
+      "Conventional_Energy": 6095552575.0, 
+      "Green_Energy": 2193474620.0, 
+      "year_energy": 2007
+    }, 
+    {
+      "Conventional_Energy": 4701668942.0, 
+      "Green_Energy": 1997098136.0, 
+      "year_energy": 1995
+    }
+  ], 
+  "map": [
+    {
+      "megawatthours": 4941979840.0, 
+      "state_id": "CA"
+    }, 
+    {
+      "megawatthours": 608481186.0, 
+      "state_id": "NH"
+    }, 
+    {
+      "megawatthours": 2276345568.0, 
+      "state_id": "OR"
+    }, 
+    {
+      "megawatthours": 3103708172.0, 
+      "state_id": "TX"
+    }, 
+    {
+      "megawatthours": 256016012.0, 
+      "state_id": "ND"
+    }, 
+    {
+      "megawatthours": 266588816.0, 
+      "state_id": "NV"
+    }, 
+    {
+      "megawatthours": 920127458.0, 
+      "state_id": "OH"
+    }, 
+    {
+      "megawatthours": 188647130.0, 
+      "state_id": "KY"
+    }, 
+    {
+      "megawatthours": 3748343303.0, 
+      "state_id": "NY"
+    }, 
+    {
+      "megawatthours": 29022015.0, 
+      "state_id": "HI"
+    }, 
+    {
+      "megawatthours": 91522836.0, 
+      "state_id": "NM"
+    }, 
+    {
+      "megawatthours": 541361084.0, 
+      "state_id": "MS"
+    }, 
+    {
+      "megawatthours": 103678925.0, 
+      "state_id": "IN"
+    }, 
+    {
+      "megawatthours": 105667068.0, 
+      "state_id": "WV"
+    }, 
+    {
+      "megawatthours": 617498246.0, 
+      "state_id": "NE"
+    }, 
+    {
+      "megawatthours": 642179886.0, 
+      "state_id": "MO"
+    }, 
+    {
+      "megawatthours": 1630040616.0, 
+      "state_id": "FL"
+    }, 
+    {
+      "megawatthours": 302971583.0, 
+      "state_id": "ME"
+    }, 
+    {
+      "megawatthours": 979957220.0, 
+      "state_id": "AR"
+    }, 
+    {
+      "megawatthours": 798590943.0, 
+      "state_id": "WI"
+    }, 
+    {
+      "megawatthours": 2494011030.0, 
+      "state_id": "NC"
+    }, 
+    {
+      "megawatthours": 909080043.0, 
+      "state_id": "CT"
+    }, 
+    {
+      "megawatthours": 331887702.0, 
+      "state_id": "SD"
+    }, 
+    {
+      "megawatthours": 1247170.0, 
+      "state_id": "RI"
+    }, 
+    {
+      "megawatthours": 410832904.0, 
+      "state_id": "OK"
+    }, 
+    {
+      "megawatthours": 624063172.0, 
+      "state_id": "ID"
+    }, 
+    {
+      "megawatthours": 2026071176.0, 
+      "state_id": "GA"
+    }, 
+    {
+      "megawatthours": 986364992.0, 
+      "state_id": "MN"
+    }, 
+    {
+      "megawatthours": 4399256268.0, 
+      "state_id": "PA"
+    }, 
+    {
+      "megawatthours": 875779773.0, 
+      "state_id": "MD"
+    }, 
+    {
+      "megawatthours": 78609358.0, 
+      "state_id": "AK"
+    }, 
+    {
+      "megawatthours": 142391178.0, 
+      "state_id": "WY"
+    }, 
+    {
+      "megawatthours": 965227808.0, 
+      "state_id": "LA"
+    }, 
+    {
+      "megawatthours": 636571792.0, 
+      "state_id": "MT"
+    }, 
+    {
+      "megawatthours": 5214433952.0, 
+      "state_id": "IL"
+    }, 
+    {
+      "megawatthours": 1918790486.0, 
+      "state_id": "TN"
+    }, 
+    {
+      "megawatthours": 5199100334.0, 
+      "state_id": "WA"
+    }, 
+    {
+      "megawatthours": 1636462168.0, 
+      "state_id": "NJ"
+    }, 
+    {
+      "megawatthours": 1630009327.0, 
+      "state_id": "MI"
+    }, 
+    {
+      "megawatthours": 332800827.0, 
+      "state_id": "MA"
+    }, 
+    {
+      "megawatthours": 2393741024.0, 
+      "state_id": "AL"
+    }, 
+    {
+      "megawatthours": 84063138.0, 
+      "state_id": "UT"
+    }, 
+    {
+      "megawatthours": 643716653.0, 
+      "state_id": "IA"
+    }, 
+    {
+      "megawatthours": 289527624.0, 
+      "state_id": "VT"
+    }, 
+    {
+      "megawatthours": 246278076.0, 
+      "state_id": "CO"
+    }, 
+    {
+      "megawatthours": 3001081466.0, 
+      "state_id": "SC"
+    }, 
+    {
+      "megawatthours": 1570856400.0, 
+      "state_id": "VA"
+    }, 
+    {
+      "megawatthours": 731829.0, 
+      "state_id": "DE"
+    }, 
+    {
+      "megawatthours": 2165754387.0, 
+      "state_id": "AZ"
+    }, 
+    {
+      "megawatthours": 719688194.0, 
+      "state_id": "KS"
+    }
+  ]
+}

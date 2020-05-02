@@ -18,7 +18,7 @@ function map_update() {
     }
     // d3.json("/results?").then(function (data) {
 //     console.log(data[0])
-//}
+// }
 }
 
 map_update();
