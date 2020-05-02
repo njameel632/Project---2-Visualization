@@ -31,41 +31,37 @@
     <div class="container">
       <div class="row">
         <div class="col-3">
-
           <div class="key">
             <p class="key"> Select a Year:</p>
             <form action="/results" , method="POST">
-              <input type="number" min="1990" max="2018" placeholder="YEAR" class="slider" id="myRange"> <br>
+              <input type="number" min="1990" max="2018" placeholder="1990" class="slider" id="myRange"></p> <br>
 
               <input type="checkbox" id="Green Resources" name="Green Resources" checked>
-              <label for="Green Resources"> Green Resources</label><br>
+              <label for="Green Resources"> GREEN ENERGY</label><br>
 
               <input type="checkbox" id="Wind" name="Wind">
               <label for="Wind"> Wind</label><br>
-              <script>
-              </script>
 
               <input type="checkbox" id="Hydroelectric Conventional" name="Hydroelectric Conventional">
               <label for="Hydroelectric Conventional"> Hydroelectric</label><br>
 
               <input type="checkbox" id="Solar Thermal and Photovoltaic" name="Solar Thermal and Photovoltaic">
-              <label for="Solar Thermal and Photovoltaic"> Solar Thermal and Photovoltaic</label><br>
-              <br>
+              <label for="Solar Thermal and Photovoltaic"> Solar</label><br>
+              
 
               <input type="checkbox" id="Nuclear" class="Green" name="Nuclear">
               <label for="Nuclear"> Nuclear</label><br>
-              <br>
 
               <input type="checkbox" id="Geothermal" class="Green" name="Geothermal">
               <label for="Geothermal"> Geothermal</label><br>
-              <br>
 
               <input type="checkbox" id="Pumped Storage" class="Green" name="Pumped Storage">
               <label for="Pumped Storage"> Pumped Storage</label><br>
               <br>
 
-              <input type="checkbox" id="Conventional Resources" class="Conventional" name="Conventional Resources" checked>
-              <label for="Conventional Resources"> Conventional Resources</label><br>
+              <input type="checkbox" id="Conventional Resources" class="Conventional" name="Conventional Resources"
+                checked>
+              <label for="Conventional Resources"> CONVENTIONAL ENERGY</label><br>
 
 
               <input type="checkbox" id="Coal" name="Coal">
@@ -94,9 +90,9 @@
           </div>
         </div>
         <div class="col-8">
-          <h1> Energy Resources by State</h1>
+          <h1> Energy Sources by State</h1>
           <!-- <div style="display: table;"> -->
-          <img src=MAP style="float:right; width:70%">
+          <div src=MAP style="float:right; width:70%"> </div>
         </div>
       </div>
     </div>
@@ -113,7 +109,9 @@
           <img class="align-self-start mr-3" src="..." alt="Generic placeholder image">
           <div class="media-body">
             <h5 class="mt-0">Bar Chart: Green vs Conventional Energy by State</h5>
+            <div id="plot"></div>
             <p>This can be a quick sentence about the barchart.</p>
+          </div>
           </div>
         </div>
       </div>
@@ -122,7 +120,9 @@
           <img class="align-self-start mr-3" src="...">
           <div class="media-body">
             <h5 class="mt-0">Line Graph</h5>
+            <div id = "plot1">
             <p>This can be a quick sentence about the line graph.</p>
+          </div>
           </div>
         </div>
       </div>
@@ -136,7 +136,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
-  <script type="Javascript" src="logic.js"></script>
+  
+  <!-- Javascript initialization -->
+  <script src=“https://d3js.org/d3.v5.min.js”></script>
+  <script src=“https://cdn.plot.ly/plotly-latest.min.js”></script>
+  <script type="text/javascript" src="static/app.js"></script>
 
   </body>
 
