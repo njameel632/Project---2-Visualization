@@ -37,3 +37,7 @@ h3{
 .post{
     margin: 50px 100px 0 100px;
 }
+.background{
+    color:#000;
+    opacity:0.5 
+}

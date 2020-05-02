@@ -1,4 +1,4 @@
-function getLine(line) {
+function getLine() {
   d3.json("/results").then((importeddata) => {
     console.log(importeddata);
 
@@ -67,4 +67,4 @@ function getBar(bar) {
   });
 }
 
-init();
+getLine();
