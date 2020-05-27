@@ -16,8 +16,8 @@ app = Flask(__name__)
 # engine = create_engine(rds_connection_string)
 
 #Noaman
-rds_connection_string = "postgres://NoamanJameel:Noamanj1919@localhost:5432/postgres"
-engine = create_engine(rds_connection_string)
+# rds_connection_string = "postgres://NoamanJameel:Noamanj1919@localhost:5432/postgres"
+# engine = create_engine(rds_connection_string)
 
 #Luke
 # path_string = "postgres:postgres@localhost:5432/energy"
@@ -28,8 +28,8 @@ engine = create_engine(rds_connection_string)
 # engine = create_engine(f"postgresql://{path_string}")
 
 #Jonathan
-# rds_connection_string = "postgres://postgres:postgres@localhost:5432/test_db"
-# engine = create_engine(rds_connection_string)
+rds_connection_string = "postgres://postgres:postgres@localhost:5432/test_db"
+engine = create_engine(rds_connection_string)
 
 # Base = automap_base()
 # Base.prepare(engine, reflect=True)
